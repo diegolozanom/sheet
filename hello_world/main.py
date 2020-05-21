@@ -11,12 +11,13 @@ import numpy as np
 app = Flask(__name__)
 
 
-@app.route('/', methods=['OPTIONS'])
-def options():
-    pass
+@app.route('/')
+def hello():
+     """Return a friendly HTTP greeting."""
+     return str("FUNCIONA")
 
 
-@app.route('/', methods=['POST'])
+@app.route('/api/test', methods=['POST'])
 def post():
     r = request
     result = sheet_return(r.data)
