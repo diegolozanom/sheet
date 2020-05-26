@@ -17,6 +17,16 @@ def hello():
      return str("FUNCIONA")
 
 
+@app.route('/api/imagen', methods=['GET', 'POST'])
+def imagen():
+    imagefile = None
+    imagefile = request.files['image']
+    if imagefile:
+       img = Image.open(file)
+    
+    return "Image successfully loaded."
+
+
 @app.route('/api/test', methods=['POST'])
 def post():
     r = request
