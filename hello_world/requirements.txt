@@ -2,6 +2,6 @@ Flask==1.1.2
 gunicorn==20.0.4
 grpcio==1.26.0rc1
 numpy<1.17
-tensorflow==2.0.0b1
+tensorflow==2.5.1
 pillow==7.1.2
 piexif==1.1.2
